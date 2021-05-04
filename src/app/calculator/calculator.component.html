@@ -1,0 +1,24 @@
+<div class="overall-container">
+    <div>
+        <h1 style="text-align:center;">Calculator</h1>
+    </div>
+
+    <div class="input-container">
+        <input [(ngModel)]="num1" type="number" name="num1" id="num1">
+        &nbsp;
+        <input [(ngModel)]="num2" type="number" name="num2" id="num2">
+        <br>
+        <br>
+        <div class="operations">
+            <button class="btn btn-primary sum" (click)="sum()">Sum</button>&nbsp;
+            <button class="btn btn-primary sub" (click)="sub()">Sub</button>&nbsp;
+            <button class="btn btn-primary mul" (click)="mul()">Mul</button>&nbsp;
+            <button class="btn btn-primary div" (click)="div()">Div</button>
+        </div>
+        <div>
+            <h2>
+                 The Result of {{num1}} and {{num2}} is {{result | number:'1.2-2' }}
+            </h2>
+        </div>
+    </div>
+</div>
